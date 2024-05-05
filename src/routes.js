@@ -1,10 +1,11 @@
-import AuthProfile from "./components/AuthProfile"
+import { lazy } from "react"
 import Home from "./components/Home"
-import Login from "./components/Login"
-import RepoDetails from "./components/RepoDetails"
-import Search from "./components/Search"
-import UserProfile from "./components/UserProfile"
-import Users from "./components/Users"
+const AuthProfile = lazy(() => import("./components/AuthProfile"))
+const Login = lazy(() => import("./components/Login"))
+const RepoDetails = lazy(() => import("./components/RepoDetails"))
+const Search = lazy(() => import("./components/Search"))
+const UserProfile = lazy(() => import("./components/UserProfile"))
+const Users = lazy(() => import("./components/Users"))
 
 export const appRoutes = [
     {
